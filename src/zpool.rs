@@ -42,7 +42,7 @@ fn is_line_ok(line: &String) -> bool {
     let read_errors: i8 = FromStr::from_str(&chunks[2]).unwrap();
     let write_errors: i8 = FromStr::from_str(&chunks[3]).unwrap();
     let checksum_errors: i8 = FromStr::from_str(&chunks[4]).unwrap();
-    if read_errors == 0 || write_errors > 0 || checksum_errors > 0 {
+    if read_errors > 0 || write_errors > 0 || checksum_errors > 0 {
         return true;
     }
 

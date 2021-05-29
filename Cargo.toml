@@ -5,3 +5,4 @@ authors = ["David Lumaye <littletiger58@gmail.com>"]
 
 [dependencies]
 lettre = "0.10.0-rc.3"
+dotenv = "0.15.0"
